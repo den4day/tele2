@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="/favicon/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="global.css" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Tele2</title>
+	</head>
+	<body>
+		<header class="header">
+			<a href="/tele2/">
+				<img
+					class="header__logo"
+					src="/img/logo.svg"
+					alt="logo"
+					width="88"
+					height="33"
+				/>
+			</a>
+			<button class="header__btn" type="button">
+				<svg
+					width="32"
+					height="32"
+					viewBox="0 0 32 32"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						class="header__icon"
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M16 3C11.0174 3.0547 7 7.10546 7 12.0939C7 12.1197 7 12.1462 7 12.172C7 17.019 15.0574 27.2733 15.4005 27.707C15.5412 27.8859 15.7569 28 16 28C16.2431 28 16.4588 27.8859 16.5979 27.7085C16.9426 27.2733 25 17.019 25 12.1681C25 12.1462 25 12.1205 25 12.0939C25 7.10468 20.9818 3.0547 16.0047 3H16ZM16 25.9488C13.4669 22.6162 8.53973 15.4531 8.53973 12.1681C8.53895 12.1291 8.53817 12.0822 8.53817 12.0361C8.53817 7.91577 11.8787 4.57608 16 4.57608C20.1213 4.57608 23.4618 7.91577 23.4618 12.0361C23.4618 12.0822 23.4611 12.1291 23.4603 12.1752C23.4603 15.4516 18.5323 22.6131 15.9992 25.9473L16 25.9488ZM16 8.21113C15.9766 8.21035 15.9492 8.21035 15.9218 8.21035C13.6341 8.21035 11.7794 10.0646 11.7794 12.3518C11.7794 14.6389 13.6341 16.4932 15.9218 16.4932C18.2096 16.4932 20.0635 14.6397 20.0643 12.3525C20.0643 12.3416 20.0643 12.3283 20.0643 12.315C20.0643 10.0623 18.2502 8.23223 16.0023 8.20723L16 8.21113ZM16 14.9241C15.9859 14.9241 15.9687 14.9249 15.9515 14.9249C14.5298 14.9249 13.3778 13.7731 13.3778 12.3518C13.3778 10.9304 14.5298 9.77861 15.9515 9.77861C17.3733 9.77861 18.5253 10.9304 18.5253 12.3518C18.5253 12.3525 18.5253 12.3525 18.5253 12.3533C18.5253 12.358 18.5253 12.3643 18.5253 12.3697C18.5253 13.7692 17.3975 14.9061 16.0016 14.921L16 14.9241Z"
+						fill="white"
+					/>
+				</svg>
+				<span class="header__text">Санкт-Петербург</span>
+			</button>
+			<dialog class="dialog" id="dialog" aria-labelledby="dialog-name">
+				<h6 class="dialog__title" id="dialog-name">
+					Ваш регион <span class="dialog__city">Санкт-Петербург</span>?
+				</h6>
+				<button class="dialog__confirm" type="button">Да, верно</button>
+				<button class="dialog__change" type="button">Изменить регион</button>
+			</dialog>
+		</header>
+		<main class="main">
+			<section class="benefit">
+				<div class="benefit__info">
+					<p class="benefit__date">Акция продлится с 1 по 20 сентября</p>
+					<h1 class="benefit__title">ЭТО ВАША <span>ВЫГОДА!</span></h1>
+					<p class="benefit__text">
+						Тариф «Мой онлайн+» и 1 ТБ трафика в подарок для новых абонентов
+					</p>
+					<a class="benefit__btn" href="#form">Принять участие</a>
+				</div>
+				<img
+					class="benefit__img"
+					src="/img/boss.png"
+					alt="boss"
+					width="584"
+					height="551"
+				/>
+			</section>
+			<section class="promo">
+				<h2 class="promo__title">Один терабайт — много любимых развлечений</h2>
+				<p class="promo__condition">
+					Подарок получают только новые абоненты при подключении услуг Tele2 с
+					тарифом «Мой онлайн+». Трафик расходуется в течение года.
+				</p>
+				<ul class="promo__list">
+					<li class="promo__item">
+						<div class="promo__item-bg">
+							<img
+								src="/icons/videoIcon.svg"
+								alt="video"
+								width="40"
+								height="40"
+								loading="lazy"
+							/>
+						</div>
+						<span>Около 500 часов видео</span>
+					</li>
+					<li class="promo__item">
+						<div class="promo__item-bg">
+							<img
+								src="/icons/musicIcon.svg"
+								alt="music"
+								width="40"
+								height="40"
+								loading="lazy"
+							/>
+						</div>
+						<span>Примерно 200 000 песен</span>
+					</li>
+					<li class="promo__item">
+						<div class="promo__item-bg">
+							<img
+								src="/icons/photoIcon.svg"
+								alt="photo"
+								width="40"
+								height="40"
+								loading="lazy"
+							/>
+						</div>
+						<span>Порядка 300 000 фото</span>
+					</li>
+				</ul>
+			</section>
+			<section class="manual">
+				<article class="manual__col">
+					<h2 class="manual__title" id="form">
+						Несколько шагов <span>и 1 ТБ — ваш</span>
+					</h2>
+					<form action="/" method="get" autocomplete="on">
+						<label class="manual__phone" for="phone">Номер телефона</label>
+						<input
+							class="manual__input"
+							type="tel"
+							id="phone"
+							name="phone"
+							placeholder="+7 (988) 543-32-34"
+							maxlength="18"
+							required
+						/>
+						<template class="manual__template-hint">
+							<div class="manual__hint">
+								<div class="manual__hint-icon-bg">
+									<svg
+										class="manual__hint-icon"
+										width="6"
+										height="6"
+										viewBox="0 0 6 6"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path d="M0.5 3L2.05945 4.5L5.5 1" stroke="#04662E" />
+									</svg>
+								</div>
+								<p class="manual__hint-text">Промокод выслан на ваш номер</p>
+							</div>
+						</template>
+						<label class="manual__agree">
+							<input
+								class="manual__checkbox"
+								type="checkbox"
+								name="agree"
+								required
+							/>
+							<span class="manual__checkbox-custom"></span>
+							<p>
+								Даю согласие на обработку персональных данных.
+								<a href="/tele2/" target="_blank">Условия соглашения.</a>
+							</p>
+						</label>
+						<input class="manual__btn" type="submit" value="Выслать промокод" />
+						<template class="manual__template-message">
+							<div class="manual__message">
+								<div class="manual__bg">
+									<svg
+										width="11"
+										height="8"
+										viewBox="0 0 11 8"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M1 3.5L3.83333 6.5L10 1"
+											stroke="#1F2229"
+											stroke-width="2"
+										/>
+									</svg>
+								</div>
+								<p class="manual__text">Промокод выслан на ваш номер</p>
+							</div>
+						</template>
+					</form>
+				</article>
+				<div>
+					<ul class="manual__list">
+						<li class="manual__item">
+							<div class="manual__number">1</div>
+							<p>
+								Ведите свой номер телефона, затем дождитесь смс с промокодом для
+								получения Тб
+							</p>
+						</li>
+						<li class="manual__item">
+							<div class="manual__number">2</div>
+							<p>
+								Перейдите на сайт Tele2 и активируйте промокод при подключении
+								на тариф «Мой Онлайн+»
+							</p>
+						</li>
+						<li class="manual__item">
+							<div class="manual__number">3</div>
+							<p>
+								Используйте свой подарочный ТБ от Tele2 в течение всего года
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="order">
+				<div class="order__info">
+					<h2 class="order__title">Заходите на сайт Tele2</h2>
+					<p class="order__text">
+						Перейдите в магазин, оформите тариф «Мой онлайн+» и на страничке
+						активации введите ваш промокод. Готово!
+					</p>
+					<a class="order__btn" href="https://rostov.tele2.ru" target="_blank"
+						>Оформить тариф</a
+					>
+				</div>
+				<img
+					class="order__img"
+					src="/img/tariff.png"
+					alt="tariff"
+					width="359"
+					height="373"
+					loading="lazy"
+				/>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__top">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="/tele2/">
+							<svg
+								width="40"
+								height="40"
+								viewBox="0 0 40 40"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									class="footer__icon"
+									d="M34 12.8947C33.0801 13.4922 32.0917 13.7364 30.875 13.8421C32.1131 13.2839 32.9264 12.3934 32.9583 11C32.3182 11.853 31.2207 12.2312 29.8333 12.8947C29.1168 11.5518 27.7837 11 26.7083 11C23.4759 11 21.1795 13.0345 21.5 15.7368C21.1795 15.9001 21.2248 16.2469 21.5 16.6842C17.0496 16.39 13.2703 14.581 11.0833 11.9474C10.2991 12.5028 10.0461 13.2834 10.0417 13.8421C10.0461 15.6927 10.9516 17.0836 12.125 17.6316C11.4871 17.8749 10.6962 17.6705 10.0417 17.6316C10.0042 17.3491 10.0042 17.3681 10.0417 17.6316C10.0042 19.5889 11.7723 21.4255 14.2083 21.4211C13.6882 21.9468 13.235 22.0025 13.1667 22.3684C12.4368 22.0025 12.1155 21.974 12.125 22.3684C12.455 23.7261 14.3491 25.0401 16.2917 25.2105C14.8382 26.2955 12.6266 27.0219 10.0417 27.1053C9.80952 27.0219 9.40127 27.0004 9 27.1053C11.2698 28.2477 13.9659 29 17.3333 29C26.2964 29 31.4555 22.0757 31.9167 15.7368C31.4504 15.6779 31.4555 15.8738 31.9167 15.7368C32.4428 14.8423 33.3124 14.042 34 12.8947Z"
+									fill="white"
+								/>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="/tele2/">
+							<svg
+								width="40"
+								height="40"
+								viewBox="0 0 40 40"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									class="footer__icon"
+									d="M29.4052 22.1749C28.9686 21.6149 29.0935 21.3657 29.4052 20.8651C29.4108 20.8594 33.0143 15.8011 33.3855 14.0857L33.3878 14.0846C33.5723 13.4594 33.3878 13 32.4956 13H29.5435C28.792 13 28.4455 13.3943 28.2599 13.8354C28.2599 13.8354 26.7568 17.4903 24.6305 19.8594C23.9442 20.544 23.627 20.7634 23.2523 20.7634C23.0678 20.7634 22.7809 20.544 22.7809 19.9189V14.0846C22.7809 13.3349 22.5705 13 21.9484 13H17.3065C16.8351 13 16.555 13.3497 16.555 13.6754C16.555 14.3863 17.6181 14.5497 17.7284 16.5497V20.8891C17.7284 21.84 17.5585 22.0149 17.1816 22.0149C16.1781 22.0149 13.7424 18.3451 12.2989 14.1451C12.0075 13.3303 11.7229 13.0011 10.9658 13.0011H8.01254C7.16988 13.0011 7 13.3954 7 13.8366C7 14.616 8.00353 18.4914 11.6667 23.6114C14.108 27.1063 17.5461 29 20.6737 29C22.5537 29 22.7832 28.5794 22.7832 27.856C22.7832 24.5166 22.6133 24.2011 23.5549 24.2011C23.9915 24.2011 24.743 24.4206 26.4981 26.1063C28.504 28.1051 28.8336 29 29.9564 29H32.9085C33.7501 29 34.1764 28.5794 33.9312 27.7497C33.3698 26.0046 29.5762 22.4149 29.4052 22.1749Z"
+									fill="white"
+								/>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="/tele2/" target="_blank">
+							<svg
+								width="40"
+								height="40"
+								viewBox="0 0 40 40"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0_538_766)">
+									<path
+										class="footer__icon"
+										d="M23.8991 10.5661H26.3333V6.19365C25.9134 6.13406 24.469 6 22.787 6C19.2773 6 16.873 8.27677 16.873 12.4614V16.3125H13V21.2006H16.873V33.5H21.6215V21.2018H25.3379L25.9278 16.3136H21.6204V12.946C21.6215 11.5332 21.9904 10.5661 23.8991 10.5661Z"
+										fill="white"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0_538_766">
+										<rect width="40" height="40" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<a class="footer__condition" href="/tele2/" target="_blank"
+					>Полные условия акции</a
+				>
+				<div class="footer__age">16+</div>
+			</div>
+			<div class="footer__bottom">
+				<a class="footer__logo" href="/tele2/">
+					<img
+						src="/img/logo.svg"
+						alt="logo"
+						width="79"
+						height="30"
+						loading="lazy"
+					/>
+				</a>
+				<p class="footer__company">&#169; Tele2 Россия, 2024</p>
+				<p class="footer__developer">Сделано в Студии Олега Чулакова</p>
+				<a href="https://chulakov.ru/" target="_blank">
+					<img
+						src="/img/chulakov.svg"
+						alt="developer"
+						width="140"
+						height="16"
+						loading="lazy"
+					/>
+				</a>
+			</div>
+		</footer>
+		<template class="city__template">
+			<article class="city">
+				<h2 class="city__title">Выберите город</h2>
+				<ul class="city__table">
+					<li>
+						<button class="city__item" type="button">Воронеж</button>
+					</li>
+					<li>
+						<button class="city__item" type="button">Москва</button>
+					</li>
+					<li>
+						<button class="city__item" type="button">Ростов-на-Дону</button>
+					</li>
+					<li>
+						<button class="city__item" type="button">Иркутск</button>
+					</li>
+					<li>
+						<button class="city__item" type="button">Н. Новгород</button>
+					</li>
+					<li>
+						<button class="city__item" type="button">Санкт-Петербург</button>
+					</li>
+					<li>
+						<button class="city__item" type="button">Кемерово</button>
+					</li>
+					<li>
+						<button class="city__item" type="button">Новосибирск</button>
+					</li>
+					<li>
+						<button class="city__item" type="button">Челябинск</button>
+					</li>
+					<li>
+						<button class="city__item" type="button">Красноярск</button>
+					</li>
+					<li>
+						<button class="city__item" type="button">Пермь</button>
+					</li>
+				</ul>
+			</article>
+		</template>
+		<a class="back-to-top" href="#top" title="Back to top">&#9650;</a>
+		<!-- <script src="src/scripts/backToTop.js"></script>
+		<script src="src/scripts/chooseCity.js"></script>
+		<script src="src/scripts/phoneInput.js"></script>
+		<script src="src/scripts/validateForm.js"></script> -->
+		<script type="module">
+			// загружаем скрипты из папки src/scripts
+			import backToTop from './src/scripts/backToTop.js'
+			import chooseCity from './src/scripts/chooseCity.js'
+			import phoneInput from './src/scripts/phoneInput.js'
+			import validateForm from './src/scripts/validateForm.js'
+
+			backToTop()
+			chooseCity()
+			phoneInput()
+			validateForm()
+		</script>
+	</body>
+</html>

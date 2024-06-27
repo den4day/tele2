@@ -1,0 +1,68 @@
+@font-face {
+	font-family: 'Tele2TextSans';
+	src: url('/fonts/Tele2TextSans-Regular/Tele2TextSans-Regular.eot')
+			format('embedded-opentype'),
+		url('/fonts/Tele2TextSans-Regular/Tele2TextSans-Regular.woff')
+			format('woff'),
+		url('/fonts/Tele2TextSans-Regular/Tele2TextSans-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Tele2TextSans';
+	src: url('/fonts/Tele2TextSans-Bold/Tele2TextSans-Bold.eot')
+			format('embedded-opentype'),
+		url('/fonts/Tele2TextSans-Bold/Tele2TextSans-Bold.woff') format('woff'),
+		url('/fonts/Tele2TextSans-Bold/Tele2TextSans-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Tele2DisplaySerif';
+	src: url('/fonts/Tele2DisplaySerif-Regular/Tele2DisplaySerif-Regular.eot')
+			format('embedded-opentype'),
+		url('/fonts/Tele2DisplaySerif-Regular/Tele2DisplaySerif-Regular.woff')
+			format('woff'),
+		format('truetype'),
+		url('/fonts/Tele2DisplaySerif-Regular/Tele2DisplaySerif-Regular.svg')
+			format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Tele2DisplaySerif';
+	src: url('/fonts/Tele2DisplaySerif-Bold/Tele2DisplaySerif-Bold.eot')
+			format('embedded-opentype'),
+		url('/fonts/Tele2DisplaySerif-Bold/Tele2DisplaySerif-Bold.woff')
+			format('woff'),
+		url('/fonts/Tele2DisplaySerif-Bold/Tele2DisplaySerif-Bold.svg')
+			format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'StandardCTStencil';
+	src: url('/fonts/StandardCTStencil/StandardCTStencil-Bold.woff2')
+		format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+:root {
+	--background-color: #1f2229;
+	--white: #ffffff;
+	--blue: #48ccfd;
+	--circle: #39404c;
+	--gray: #8f9399;
+	--status: #262b36;
+	--green: #07cb5c;
+	--red: #ff4d6c;
+
+	--Tele2TextSans: 'Tele2TextSans', sans-serif;
+	--Tele2DisplaySerif: 'Tele2DisplaySerif', serif;
+	--StandardCTStencil: 'StandardCTStencil';
+}

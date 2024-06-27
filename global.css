@@ -1,0 +1,11 @@
+@import '/src/css/_reset';
+@import '/src/css/_variables';
+
+body {
+	background-color: var(--background-color);
+	color: var(--white);
+	font-family: var(--Tele2TextSans);
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 150%;
+}
