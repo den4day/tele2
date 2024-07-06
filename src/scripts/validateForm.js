@@ -1,5 +1,4 @@
 export default function validateForm() {
-	console.log('validateForm')
 	const submitBtn = document.querySelector('.manual__btn')
 	const form = document.querySelector('.manual form')
 

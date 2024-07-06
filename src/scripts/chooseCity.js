@@ -1,5 +1,4 @@
 export default function chooseCity() {
-	console.log('chooseCity')
 	const locationBtn = document.querySelector('.header__btn')
 	const dialog = document.querySelector('.dialog')
 	const confirmBtn = document.querySelector('.dialog__confirm')

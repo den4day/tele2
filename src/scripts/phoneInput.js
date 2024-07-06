@@ -1,5 +1,4 @@
 export default function phoneInput() {
-	console.log('phoneInput')
 	const phoneInput = document.querySelector('.manual__input')
 
 	// убираем все символы кроме цифр
