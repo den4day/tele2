@@ -512,18 +512,11 @@
 	background-repeat: no-repeat;
 	background-color: transparent;
 	border: none;
-
-	/* &::before {
-		content: '';
-		position: absolute;
-		right: 20px;
-		top: -20px;
-		border: 11px solid transparent;
-		border-bottom: 10px solid var(--white);
-	} */
+	/* transition: background-color 10.8s ease-in; */
 
 	&::backdrop {
 		background-color: rgba(0, 0, 0, 0.8);
+		backdrop-filter: blur(2px);
 	}
 
 	.dialog__title {
