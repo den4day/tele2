@@ -2,8 +2,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 30px;
-	border-bottom: 1px solid #383d4a;
+	padding-block-start: 20px;
+	padding-block-end: 20px;
+	padding-inline-start: 30px;
+	padding-inline-end: 30px;
+	border-block-end: 1px solid #383d4a;
 
 	.header__btn {
 		display: flex;
@@ -25,7 +28,7 @@
 		}
 
 		.header__icon {
-			margin-right: 8px;
+			margin-inline-end: 8px;
 			transition: fill 0.2s ease-in;
 		}
 
@@ -54,14 +57,14 @@
 	.benefit {
 		display: flex;
 		justify-content: space-between;
-		margin-top: 56px;
-		margin-bottom: 148px;
+		margin-block-start: 56px;
+		margin-block-end: 148px;
 
 		.benefit__info {
-			margin-top: 24px;
+			margin-block-start: 24px;
 
 			.benefit__date {
-				margin-bottom: 48px;
+				margin-block-end: 48px;
 				width: fit-content;
 			}
 
@@ -70,7 +73,7 @@
 				font-family: var(--StandardCTStencil);
 				font-size: 68px;
 				line-height: 100%;
-				margin-bottom: 24px;
+				margin-block-end: 24px;
 
 				span {
 					color: var(--blue);
@@ -79,13 +82,16 @@
 
 			.benefit__text {
 				max-width: 340px;
-				margin-bottom: 56px;
+				margin-block-end: 56px;
 			}
 
 			.benefit__btn {
 				font-size: 16px;
 				line-height: 22px;
-				padding: 19px 42px;
+				padding-block-start: 19px;
+				padding-block-end: 19px;
+				padding-inline-start: 42px;
+				padding-inline-end: 42px;
 				color: var(--background-color);
 				background-color: var(--white);
 				font-weight: 700;
@@ -107,19 +113,19 @@
 	}
 
 	.promo {
-		margin-bottom: 148px;
+		margin-block-end: 148px;
 
 		.promo__title {
 			font-family: var(--Tele2DisplaySerif);
 			font-size: 40px;
 			font-weight: 700;
 			line-height: 130%;
-			margin-bottom: 24px;
+			margin-block-end: 24px;
 		}
 
 		.promo__condition {
 			max-width: 664px;
-			margin-bottom: 56px;
+			margin-block-end: 56px;
 		}
 
 		.promo__list {
@@ -128,17 +134,20 @@
 			.promo__item {
 				display: flex;
 				align-items: center;
-				margin-right: 56px;
+				margin-inline-end: 56px;
 
 				&:last-child {
-					margin-right: 0;
+					margin-inline-end: 0;
 				}
 
 				.promo__item-bg {
-					padding: 16px;
+					padding-block-start: 16px;
+					padding-block-end: 16px;
+					padding-inline-start: 16px;
+					padding-inline-end: 16px;
 					background-color: var(--circle);
 					border-radius: 50px;
-					margin-right: 16px;
+					margin-inline-end: 16px;
 				}
 			}
 		}
@@ -146,18 +155,18 @@
 
 	.manual {
 		display: flex;
-		margin-bottom: 148px;
+		margin-block-end: 148px;
 
 		.manual__col {
 			max-width: 348px;
-			margin-right: 132px;
+			margin-inline-end: 132px;
 
 			.manual__title {
 				font-family: var(--Tele2DisplaySerif);
 				font-size: 40px;
 				font-weight: 700;
 				line-height: 130%;
-				margin-bottom: 64px;
+				margin-block-end: 64px;
 
 				span {
 					color: var(--blue);
@@ -169,7 +178,7 @@
 				color: var(--gray);
 				font-size: 13px;
 				line-height: 18px;
-				margin-bottom: 3px;
+				margin-block-end: 3px;
 			}
 
 			.manual__input {
@@ -178,8 +187,8 @@
 				color: var(--white);
 				font-size: 16px;
 				line-height: 138%;
-				padding-bottom: 5px;
-				border-bottom: 2px solid var(--gray);
+				padding-block-end: 5px;
+				border-block-end: 2px solid var(--gray);
 				transition: border-color 0.2s ease-in;
 
 				&::placeholder {
@@ -194,8 +203,8 @@
 			.manual__hint {
 				display: flex;
 				align-items: center;
-				margin-top: 8px;
-				margin-bottom: 33px;
+				margin-block-start: 8px;
+				margin-block-end: 33px;
 				font-size: 13px;
 				color: var(--green);
 
@@ -205,8 +214,8 @@
 					align-items: center;
 					width: 12px;
 					height: 12px;
-					margin-right: 4px;
-					padding-left: 1px;
+					margin-inline-end: 4px;
+					padding-inline-start: 1px;
 					background-color: var(--green);
 					border-radius: 50px;
 				}
@@ -224,10 +233,10 @@
 
 			.manual__agree {
 				display: flex;
-				margin-top: 24px;
+				margin-block-start: 24px;
 				font-size: 16px;
 				line-height: 138%;
-				margin-bottom: 32px;
+				margin-block-end: 32px;
 				cursor: pointer;
 
 				.manual__checkbox {
@@ -252,7 +261,7 @@
 					display: block;
 					min-width: 24px;
 					height: 24px;
-					margin-right: 8px;
+					margin-inline-end: 8px;
 					border: 2px solid var(--white);
 
 					&::before {
@@ -262,7 +271,7 @@
 						top: 50%;
 						transform: translate(-50%, -50%) scale(0);
 						transition: 0.2s ease-in;
-						margin-top: 2px;
+						margin-block-start: 2px;
 						display: inline-block;
 						width: 15px;
 						height: 15px;
@@ -276,12 +285,15 @@
 			.manual__btn {
 				font-size: 16px;
 				line-height: 22px;
-				padding: 15px 39px;
+				padding-block-start: 15px;
+				padding-block-end: 15px;
+				padding-inline-start: 39px;
+				padding-inline-end: 39px;
 				color: var(--background-color);
 				background-color: var(--white);
 				font-weight: 700;
 				border-radius: 30px;
-				margin-bottom: 48px;
+				margin-block-end: 48px;
 				cursor: pointer;
 				border: 2px solid transparent;
 				transition: color 0.2s ease-in, background-color 0.2s ease-in,
@@ -298,7 +310,10 @@
 			.manual__message {
 				display: flex;
 				align-items: center;
-				padding: 12px;
+				padding-block-start: 12px;
+				padding-block-end: 12px;
+				padding-inline-start: 12px;
+				padding-inline-end: 12px;
 				background-color: var(--status);
 				border-radius: 8px;
 
@@ -312,7 +327,7 @@
 					color: var(--background-color);
 					background-color: var(--blue);
 					border-radius: 50px;
-					margin-right: 12px;
+					margin-inline-end: 12px;
 
 					div {
 						display: flex;
@@ -326,7 +341,7 @@
 				.manual__text {
 					font-size: 14px;
 					line-height: 138%;
-					padding-top: 3px;
+					padding-block-start: 3px;
 				}
 			}
 		}
@@ -335,10 +350,10 @@
 			.manual__item {
 				display: flex;
 				align-items: center;
-				margin-bottom: 32px;
+				margin-block-end: 32px;
 
 				&:last-child {
-					margin-bottom: 0;
+					margin-block-end: 0;
 				}
 
 				.manual__number {
@@ -347,7 +362,7 @@
 					align-items: center;
 					min-width: 80px;
 					min-height: 80px;
-					margin-right: 24px;
+					margin-inline-end: 24px;
 					border: 2px solid var(--circle);
 					border-radius: 50px;
 					color: var(--blue);
@@ -362,23 +377,22 @@
 	.order {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 148px;
+		margin-block-end: 148px;
 
 		.order__info {
 			max-width: 505px;
-			margin-top: 52px;
-			/* margin-right: 118px; */
+			margin-block-start: 52px;
 
 			.order__title {
 				font-family: var(--Tele2DisplaySerif);
 				font-size: 40px;
 				line-height: 130%;
 				font-weight: 700;
-				margin-bottom: 30px;
+				margin-block-end: 30px;
 			}
 
 			.order__text {
-				margin-bottom: 48px;
+				margin-block-end: 48px;
 			}
 
 			.order__btn {
@@ -386,7 +400,10 @@
 				width: fit-content;
 				font-size: 16px;
 				line-height: 22px;
-				padding: 15px 39px;
+				padding-block-start: 15px;
+				padding-block-end: 15px;
+				padding-inline-start: 39px;
+				padding-inline-end: 39px;
 				color: var(--background-color);
 				background-color: var(--white);
 				text-decoration: none;
@@ -415,18 +432,18 @@
 	.footer__top {
 		display: flex;
 		align-items: center;
-		padding-bottom: 8px;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		padding-block-end: 8px;
+		border-block-end: 1px solid rgba(255, 255, 255, 0.2);
 
 		.footer__list {
 			display: flex;
-			margin-right: auto;
+			margin-inline-end: auto;
 
 			.footer__item {
-				margin-right: 4px;
+				margin-inline-end: 4px;
 
 				&:last-child {
-					margin-right: 0px;
+					margin-inline-end: 0px;
 				}
 
 				.footer__icon {
@@ -455,7 +472,7 @@
 			text-decoration: none;
 			font-size: 13px;
 			line-height: 18px;
-			margin-right: 12px;
+			margin-inline-end: 12px;
 		}
 
 		.footer__age {
@@ -475,26 +492,29 @@
 	.footer__bottom {
 		display: flex;
 		align-items: center;
-		padding: 43px 0;
+		padding-block-start: 43px;
+		padding-block-end: 43px;
+		padding-inline-start: 0;
+		padding-inline-end: 0;
 
 		.footer__logo {
 			max-width: 79px;
 			height: 30px;
-			margin-right: 24px;
+			margin-inline-end: 24px;
 		}
 
 		.footer__company {
 			color: rgba(255, 255, 255, 0.5);
 			font-size: 16px;
 			line-height: 22px;
-			margin-right: auto;
+			margin-inline-end: auto;
 		}
 
 		.footer__developer {
 			color: rgba(255, 255, 255, 0.5);
 			font-size: 13px;
 			line-height: 18px;
-			margin-right: 24px;
+			margin-inline-end: 24px;
 		}
 	}
 }
@@ -505,14 +525,16 @@
 	left: auto;
 	right: 5%;
 	border-radius: 4px;
-	padding: 24px 16px;
+	padding-block-start: 24px;
+	padding-block-end: 24px;
+	padding-inline-start: 16px;
+	padding-inline-end: 16px;
 	font-size: 16px;
 	background-image: url('/img/dialog.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: transparent;
 	border: none;
-	/* transition: background-color 10.8s ease-in; */
 
 	&::backdrop {
 		background-color: rgba(0, 0, 0, 0.8);
@@ -522,12 +544,15 @@
 	.dialog__title {
 		font-size: 18px;
 		font-weight: 400;
-		margin-bottom: 16px;
+		margin-block-end: 16px;
 	}
 
 	.dialog__confirm {
-		margin-right: 16px;
-		padding: 9px 19px;
+		margin-inline-end: 16px;
+		padding-block-start: 9px;
+		padding-block-end: 9px;
+		padding-inline-start: 19px;
+		padding-inline-end: 19px;
 		font-weight: 700;
 		line-height: 22px;
 		border: 2px solid var(--background-color);
@@ -552,14 +577,14 @@
 
 .city {
 	height: 100vh;
-	padding-top: 100px;
+	padding-block-start: 100px;
 
 	.city__title {
 		font-family: var(--Tele2DisplaySerif);
 		font-size: 40px;
 		font-weight: 700;
 		line-height: 130%;
-		margin-bottom: 64px;
+		margin-block-end: 64px;
 	}
 
 	.city__table {
@@ -589,7 +614,10 @@
 	bottom: 20px;
 	right: 20px;
 	font-size: 20px;
-	padding: 5px 10px;
+	padding-block-start: 5px;
+	padding-block-end: 5px;
+	padding-inline-start: 10px;
+	padding-inline-end: 10px;
 	border-radius: 8px;
 	cursor: pointer;
 	z-index: 2;
@@ -627,11 +655,11 @@
 
 			.manual__col {
 				max-width: none;
-				margin-right: 0;
-				margin-bottom: 56px;
+				margin-inline-end: 0;
+				margin-block-end: 56px;
 
 				.manual__title {
-					margin-bottom: 24px;
+					margin-block-end: 24px;
 				}
 
 				.manual__message {
@@ -658,7 +686,10 @@
 
 				.benefit__btn {
 					font-size: 16px;
-					padding: 16px 34px;
+					padding-block-start: 16px;
+					padding-block-end: 16px;
+					padding-inline-start: 34px;
+					padding-inline-end: 34px;
 				}
 			}
 
@@ -677,11 +708,11 @@
 				flex-direction: column;
 
 				.promo__item {
-					margin-right: 0;
-					margin-bottom: 32px;
+					margin-inline-end: 0;
+					margin-block-end: 32px;
 
 					&:last-child {
-						margin-bottom: 0;
+						margin-block-end: 0;
 					}
 				}
 			}
@@ -695,7 +726,10 @@
 
 				.manual__btn {
 					font-size: 16px;
-					padding: 12px 31px;
+					padding-block-start: 12px;
+					padding-block-end: 12px;
+					padding-inline-start: 31px;
+					padding-inline-end: 31px;
 				}
 			}
 		}
@@ -705,7 +739,7 @@
 
 			.order__info {
 				max-width: 404px;
-				margin-top: 0;
+				margin-block-start: 0;
 
 				.order__title {
 					font-size: 32px;
@@ -713,7 +747,10 @@
 
 				.order__btn {
 					font-size: 16px;
-					padding: 12px 31px;
+					padding-block-start: 12px;
+					padding-block-end: 12px;
+					padding-inline-start: 31px;
+					padding-inline-end: 31px;
 				}
 			}
 
@@ -739,8 +776,11 @@
 	}
 
 	.header {
-		padding: 10px 15px;
-		margin-bottom: 0;
+		padding-block-start: 10px;
+		padding-block-end: 10px;
+		padding-inline-start: 15px;
+		padding-inline-end: 15px;
+		margin-block-end: 0;
 
 		.header__logo {
 			max-width: 48px;
@@ -761,11 +801,11 @@
 
 		.benefit {
 			flex-direction: column;
-			margin-top: 0;
-			margin-bottom: 72px;
+			margin-block-start: 0;
+			margin-block-end: 72px;
 
 			.benefit__info {
-				margin-bottom: 48px;
+				margin-block-end: 48px;
 
 				.benefit__date {
 					font-size: 16px;
@@ -773,18 +813,21 @@
 
 				.benefit__title {
 					font-size: 36px;
-					margin-top: 40px;
-					margin-bottom: 16px;
+					margin-block-start: 40px;
+					margin-block-end: 16px;
 					line-height: 100%;
 				}
 
 				.benefit__text {
 					max-width: none;
-					margin-bottom: 40px;
+					margin-block-end: 40px;
 				}
 
 				.benefit__btn {
-					padding: 15px 40px;
+					padding-block-start: 15px;
+					padding-block-end: 15px;
+					padding-inline-start: 40px;
+					padding-inline-end: 40px;
 					font-size: 16px;
 					line-height: 22px;
 				}
@@ -798,31 +841,34 @@
 		}
 
 		.promo {
-			margin-bottom: 72px;
+			margin-block-end: 72px;
 
 			.promo__title {
 				font-size: 24px;
 				line-height: 140%;
-				margin-bottom: 16px;
+				margin-block-end: 16px;
 			}
 			.promo__condition {
 				max-width: none;
-				margin-bottom: 40px;
+				margin-block-end: 40px;
 			}
 
 			.promo__item-bg {
-				padding: 8px;
+				padding-block-start: 8px;
+				padding-block-end: 8px;
+				padding-inline-start: 8px;
+				padding-inline-end: 8px;
 			}
 		}
 
 		.manual {
-			margin-bottom: 72px;
+			margin-block-end: 72px;
 
 			.manual__col {
 				.manual__title {
 					font-size: 24px;
 					line-height: 140%;
-					margin-bottom: 16px;
+					margin-block-end: 16px;
 				}
 			}
 			.manual__list {
@@ -833,7 +879,7 @@
 					.manual__number {
 						min-width: 56px;
 						min-height: 56px;
-						margin-bottom: 16px;
+						margin-block-end: 16px;
 						font-size: 24px;
 					}
 				}
@@ -843,20 +889,20 @@
 		.order {
 			flex-direction: column;
 			align-items: center;
-			margin-bottom: 72px;
+			margin-block-end: 72px;
 
 			.order__info {
 				max-width: none;
-				margin-bottom: 32px;
+				margin-block-end: 32px;
 
 				.order__title {
 					font-size: 24px;
 					line-height: 140%;
-					margin-bottom: 16px;
+					margin-block-end: 16px;
 				}
 
 				.order__text {
-					margin-bottom: 32px;
+					margin-block-end: 32px;
 				}
 			}
 
@@ -886,18 +932,18 @@
 			flex-direction: column;
 
 			.footer__logo {
-				margin-right: 0;
-				margin-bottom: 8px;
+				margin-inline-end: 0;
+				margin-block-end: 8px;
 			}
 
 			.footer__company {
-				margin-right: 0;
-				margin-bottom: 16px;
+				margin-inline-end: 0;
+				margin-block-end: 16px;
 			}
 
 			.footer__developer {
-				margin-right: 0;
-				margin-bottom: 8px;
+				margin-inline-end: 0;
+				margin-block-end: 8px;
 			}
 		}
 	}
@@ -905,7 +951,7 @@
 	.dialog {
 		top: 60px;
 		right: 15px;
-		padding-top: 20px;
+		padding-block-start: 20px;
 		padding-inline: 14px;
 
 		.dialog__title {
@@ -913,17 +959,20 @@
 		}
 
 		.dialog__confirm {
-			padding: 9px 14px;
+			padding-block-start: 9px;
+			padding-block-end: 9px;
+			padding-inline-start: 14px;
+			padding-inline-end: 14px;
 		}
 	}
 
 	.city {
-		padding-top: 64px;
+		padding-block-start: 64px;
 
 		.city__title {
 			font-size: 24px;
 			line-height: 140%;
-			margin-bottom: 48px;
+			margin-block-end: 48px;
 		}
 
 		.city__table {
